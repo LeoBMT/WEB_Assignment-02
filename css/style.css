@@ -1,0 +1,406 @@
+/* MAIN COLOR: #199cdb
+GREY COLOR: #495057 */
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #495057;
+  font-size: 15px;
+}
+body {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 48px;
+  font-weight: 500;
+}
+/* section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+} */
+
+#nav-bar {
+  text-align: center;
+}
+
+/*------
+  BANNER
+  ------ */
+
+#banner {
+  background-image: linear-gradient(
+      rgba(37, 37, 37, 0.8),
+      rgba(43, 43, 43, 0.8)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+  color: #fff;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#banner h1 {
+  font-size: 44px;
+}
+
+/* -------
+NAV_BAR
+------- */
+
+#nav-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* THIẾT LẬP TAG A */
+a {
+  color: #343a40;
+  width: 140px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.8;
+  margin: -1;
+  padding: 13px 12px;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+}
+/* HIỆU ỨNG DI CHUỘT  */
+a:hover {
+  text-shadow: 0 2px 5px #00000042;
+}
+/* MÀU ICON */
+a i {
+  color: #199cdb;
+}
+/* THIẾT LẬP AVATAR */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0 150px;
+  transform: scale(5);
+}
+
+/* --------------------
+--THÔNG TIN CÁ NHÂN--
+-------------------- */
+
+#about .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#about .container > * {
+  padding: 10vh 5vw 5vh 5vw;
+}
+#target p {
+  line-height: 1.5;
+}
+#about h1 {
+  margin-bottom: 48px;
+}
+#personal-info {
+  background-color: #ececec;
+}
+#personal-info ul {
+  list-style-type: none;
+  line-height: 2;
+}
+.info span {
+  font-weight: bold;
+}
+/* SETTING CHO ICON TRONG MỤC THÔNG TIN */
+.contacts {
+  padding-left: 48px;
+  color: #199cdb;
+  display: flex;
+  gap: 16px;
+}
+
+/* --------------------
+--GIỚI THIỆU BẢN THÂN--
+-------------------- */
+
+/* THIẾT LẬP TYPOGRAPHY CHUNG */
+#job-info .container {
+  width: 80%;
+  margin: auto;
+}
+#job-info .container .part-info > i {
+  font-size: 50px;
+  margin-top: 40px;
+}
+h3 {
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+#job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 40px 40px;
+}
+.part-info {
+  display: grid;
+  grid-template-columns: 75% 1fr;
+  grid-template-rows: 25% 1fr;
+  border: 1px solid #e7e7e7;
+  padding: 0 20px 20px 20px;
+  height: 100%;
+}
+.info {
+  grid-column: 1 / -1;
+  padding: 0 20px 40px 20px;
+}
+.info-details {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.row2 {
+  margin-top: 40px;
+}
+ul {
+  list-style: none;
+}
+.info li {
+  position: relative;
+}
+
+/* TẠO DẤU CHẤM XANH TRƯỚC MỖI TIÊU ĐỀ */
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #199cdb;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+}
+
+/* TẠO PHẦN LEVEL KỸ NĂNG */
+.level {
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+  margin-bottom: 10px;
+}
+.level-pass {
+  background: #199cdb;
+}
+.level-fail {
+  background-color: #b1b1b1;
+}
+
+/* THIẾT LẬP CHỮ NGHIÊN CHO NGÀY THÁNG */
+.time {
+  display: flex;
+  font-style: italic;
+}
+
+/* TẠO BOX CHO CHỮ HIỆN TẠI */
+.time-now {
+  background-color: #199cdb;
+  color: #fff;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/* THIẾT LẬP CHO PHẦN SỞ THÍCH */
+.hobby {
+  list-style-type: none;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-right: 20px;
+  justify-items: center;
+  align-content: flex-start;
+}
+
+#job-info .hobby > i {
+  font-size: 25px;
+  color: #199cdb;
+}
+
+#job-info .hobby > i::before {
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+}
+
+.hobby p {
+  margin-top: 20px;
+  letter-spacing: -1px;
+}
+
+/* --------------------------
+---CHỨNG CHỈ - GIẢI THƯỞNG---
+-------------------------- */
+/* THIẾT LẬP CHUNG */
+#certificate {
+  margin-top: 30px;
+}
+#certificate .container {
+  width: 80%;
+  margin: auto;
+  padding: 20px 40px 40px 40px;
+}
+#certificate .container > div {
+  position: relative;
+}
+#certificate h1 {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.cert {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 40px;
+}
+/* THIẾT LẬP CHỈ TIẾT TỪNG CHỨNG CHỈ */
+.cert-details {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  padding: 20px;
+}
+.cert-img {
+  height: 96px;
+  grid-row: 1/-1;
+}
+.cert-title {
+  font-weight: 600;
+}
+/* TẠO ĐƯỜNG KẺ */
+.cert--1 {
+  border-bottom: 1px solid #d6c08d;
+}
+.cert--2 {
+  /* border-left: 1px solid #d6c08d; */
+  border-bottom: 1px solid #d6c08d;
+}
+.cert--2::before {
+  content: "";
+  background-color: #d6c08d;
+  height: 30%;
+  width: 1px;
+  position: absolute;
+  margin-top: 20px;
+}
+
+/* --------
+---DỰ ÁN---
+-------- */
+
+/* THIẾT LẬP CHUNG */
+#project .container {
+  width: 80%;
+  margin: auto;
+  padding: 0px 40px 40px 40px;
+}
+#project h1 {
+  margin-bottom: 36px;
+}
+.cont-project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* THIẾT LẬP CHO TỪNG DỰ ÁN */
+.project-img {
+  height: 225px;
+}
+.project-details {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e7e7e7;
+}
+.project-title {
+  padding: 20px 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #e7e7e7;
+}
+.describe {
+  display: flex;
+  padding: 20px 20px;
+  gap: 20px;
+  align-items: center;
+}
+/* TẠO MÀU NỀN CHO NĂM */
+.year {
+  background-color: #199cdb;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+/* THIẾT LẬP PHẦN MÔ TẢ */
+.tbl-project {
+  text-align: start;
+}
+td,
+th {
+  border-top: 1px solid #e7e7e7;
+  border-collapse: collapse;
+  text-align: left;
+  vertical-align: top;
+}
+td {
+  padding: 10px 20px 10px 0;
+}
+th {
+  padding: 10px 20px;
+  font-weight: normal;
+  width: 35%;
+}
+
+/* ---------
+---FOOTER---
+--------- */
+/* THIẾT LẬP LAYOUT */
+#footer ul {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+}
+#footer li {
+  position: relative;
+}
+/* ĐỔI MÀU CHO ICON */
+#footer i {
+  color: #199cdb;
+  font-size: 24px;
+  margin-right: 10px;
+  position: absolute;
+  transform: translate(-40px, -6px);
+}
